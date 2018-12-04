@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/wx-audio.css">
+    <title>咿啦说</title>
+</head>
+<body>
+<div id="loader" class="m-wrap-loading">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+</div>
+<div class="g-wrap">
+    <img class="els-header" src="./img/logo@3x.png" alt="">
+    <div class="els-title-page" style="margin-top: 2.5rem;padding-top: 1rem">
+        <img style="margin: 0 auto" class="els-title-img" src="./img/APP-hb022.jpg" alt="">
+        <div id="elsAudio" style="margin: 0 auto 2rem"></div>
+    </div>
+    <div class="Q-A">
+        Q&A
+    </div>
+    <div class="els-Q-A">
+        <img class="els-clip" src="./img/clip@3x.png" alt="">
+        <p class="els-Q">Q：老师，我们家的小孩去年生了一场大病，好像去医院就成为了他的童年阴影该怎么办？</p>
+        <p class="els-A">A：孩子生病对医院有一种排斥、一种恐惧，这个是很正常的。就是成人，其实也是一样。医院这个地方，你很难对他产生一种比较美好的印象，医院是我们生病去的地方，可是他也可以让我们恢复健康，我们生病进去，然后健健康康的出来。我觉得让孩子看到这一点，可以慢慢的淡化他心里的阴影。</p>
+    </div>
+    <div class="els-Q-A">
+        <div class="hook-up">
+            <i></i>
+            <i></i>
+        </div>
+        <p class="els-Q">Q：老师您好，我有个疑问，就是关于神话故事在孩子心里的影响。因为孩子会对这种事情非常的好奇，比如这个一开始被大人说成很恐怖的桃花鱼婆婆，一直问。应该如何给孩子解释或者是延伸说明这个人物。我个人觉得说多了害怕孩子总以为神灵是存在的，不说孩子又一直问。我自己是觉得小时候我的哥哥一直说我们家那里山上有个神仙奶奶，对我印象特别深刻。不知道我如何引导孩子能让孩子又保持好奇心，又不要太(迷信)。。。。。</p>
+        <p class="els-A">A：关于神灵的存在这样一个故事，孩子在读的时候。可能是会有这样一些问题提给家长，我觉得家长可以引导他更多的去认识桃花与婆婆的那种善良，比如她为了救孩子不惜自己的生命，这种美好的行为上去。</p>
+    </div>
+    <div class="els-Q-A">
+        <div class="hook-up">
+            <i></i>
+            <i></i>
+        </div>
+        <p class="els-Q">Q：请问一下是把故事读给娃听好还是让他自己看图片好？</p>
+        <p class="els-A">A：这个应该是同时进行的，图画书肯定都是亲子阅读，孩子去看图画，然后听家长给他读。我觉得他是一个同步的一个过程。</p>
+    </div>
+    <div class="els-title-btn">
+        分享给好友
+    </div>
+    <div class="els-download-app">
+        <img src="./img/gift@3x.png" alt="">
+        <div style="color: #666">
+            <p>添加“粉丝官”微信号</p>
+            <p>获取更多会员课程福利</p>
+        </div>
+        <input style="position:absolute;opacity: 0" id="foo" value="yilakanshu4">
+        <button class="btn els-copy-wx" data-clipboard-target="#foo">复制微信号并添加</button>
+    </div>
+</div>
+<div></div>
+<div class="el-toast" style="display: none;"></div>
+<div style="display: none;">
+    <script src="https://s22.cnzz.com/z_stat.php?id=1264998448&web_id=1264998448" language="JavaScript"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d82989125c2c40e2a60ea7123a21b2bf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/flexible.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/wx-audio.js"></script>
+<script>
+    new Wxaudio({
+        ele: '#elsAudio',
+        title: '童年阴影的明亮表达',
+        disc: '',
+        src: 'https://comment.ellabook.cn/ellatalkterm022.mp3',
+        width: ''
+    });
+</script>
+<script src="js/ellaSay.js?v=4"></script>
+</body>
+</html>

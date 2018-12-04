@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/wx-audio.css">
+    <title>咿啦说</title>
+</head>
+<body>
+<div id="loader" class="m-wrap-loading">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+</div>
+<div class="g-wrap">
+    <img class="els-header" src="./img/logo@3x.png" alt="">
+    <div class="els-title-page" style="margin-top: 2.5rem;padding-top: 1rem">
+        <img style="margin: 0 auto" class="els-title-img" src="./img/APP-hb021.jpg" alt="">
+        <div id="elsAudio" style="margin: 0 auto 2rem"></div>
+    </div>
+    <div class="Q-A">
+        Q&A
+    </div>
+    <div class="els-Q-A">
+        <img class="els-clip" src="./img/clip@3x.png" alt="">
+        <p class="els-Q">Q：老师，牙齿旁边长了一个大泡，每次吃东西都痛，这个泡能刺破吗？</p>
+        <p class="els-A">A：不能随意刺破，必须让专业医生进行仔细检查。</p>
+    </div>
+    <div class="els-Q-A">
+        <div class="hook-up">
+            <i></i>
+            <i></i>
+        </div>
+        <p class="els-Q">Q：老师，有时候宝宝刷牙的牙刷牙膏推荐吗？</p>
+        <p class="els-A">A：GUM是做专业口腔护理产品，牙刷牙膏都推荐，但牙刷毛偏硬，还可以选贝亲或巧虎的牙刷，毛软一点。</p>
+    </div>
+    <div class="els-Q-A">
+        <div class="hook-up">
+            <i></i>
+            <i></i>
+        </div>
+        <p class="els-Q">Q：老师，我们家宝宝5岁，前门牙2岁多坏了，做了根管治疗，但由于长时间磨损出现补牙掉了的情况，目前前门牙只有个根。换牙前用不用拔掉？治疗后牙床有个白点很硬以后会不会恢复？</p>
+        <p class="els-A">A：门牙只剩牙根牙龈上还有白点的宝宝应该拔掉这颗牙了，否则可能影响恒牙萌出，当然还需拍片确认。</p>
+    </div>
+    <div class="els-Q-A">
+        <div class="hook-up">
+            <i></i>
+            <i></i>
+        </div>
+        <p class="els-Q">Q：老师，孩子7周之前补得牙窟窿，现在补得那块掉了，还需要再补一下吗？刚换的牙发黄怎么办？</p>
+        <p class="els-A">A：需要重新补，新换的牙齿的确要比乳牙黄。</p>
+    </div>
+    <div class="els-Q-A">
+        <div class="hook-up">
+            <i></i>
+            <i></i>
+        </div>
+        <p class="els-Q">Q：孩子4岁，需要根管治疗要用麻药，请问一下您乳牙真需要这样弄吗？怕给孩子心理留下阴影。</p>
+        <p class="els-A">A：为了健康是需要这样的。</p>
+    </div>
+    <div class="els-history-split">
+        <strong>/////////////</strong>
+        <span>粉丝反馈</span>
+        <strong>////////////</strong>
+    </div>
+    <div class="els-fan-say">
+        <p>
+            <span>@北京-郎朗-5岁 :</span>
+            感谢李博士、鲁博士。
+        </p>
+        <p>
+            <span>@河南-冬冬-5岁 :</span>
+            感谢两位博士
+        </p>
+        <p>
+            <span>@汕尾-萱萱-5岁 :</span>
+            谢谢鲁博士。
+        </p>
+        <p>
+            <span>@天津-玉-7岁 :</span>
+            谢谢老师。
+        </p>
+        <p>
+            <span>@长沙-萱萱-7岁 :</span>
+            谢谢老师。
+        </p>
+    </div>
+    <div class="els-title-btn">
+        分享给好友
+    </div>
+    <div class="els-download-app">
+        <img src="./img/gift@3x.png" alt="">
+        <div style="color: #666">
+            <p>添加“粉丝官”微信号</p>
+            <p>获取更多会员课程福利</p>
+        </div>
+        <input style="position:absolute;opacity: 0" id="foo" value="yilakanshu4">
+        <button class="btn els-copy-wx" data-clipboard-target="#foo">复制微信号并添加</button>
+    </div>
+</div>
+<div></div>
+<div class="el-toast" style="display: none;"></div>
+<div style="display: none;">
+    <script src="https://s22.cnzz.com/z_stat.php?id=1264998448&web_id=1264998448" language="JavaScript"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d82989125c2c40e2a60ea7123a21b2bf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/flexible.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/wx-audio.js"></script>
+<script>
+    new Wxaudio({
+        ele: '#elsAudio',
+        title: '老吾老幼吾幼之口腔健康',
+        disc: '',
+        src: 'https://comment.ellabook.cn/ellatalkterm021.mp3',
+        width: ''
+    });
+</script>
+<script src="js/ellaSay.js?v=4"></script>
+</body>
+</html>

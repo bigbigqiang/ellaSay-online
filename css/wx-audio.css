@@ -1,0 +1,182 @@
+.wx-audio-content {
+    height: 100%;
+    padding: 0 1rem;
+    -moz-box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wx-audio-content .wx-audio-info {
+    display: none
+}
+
+.wx-audio-content .wx-audio-left {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.wx-audio-content .wx-audio-left .wx-audio-state {
+    width: 100%;
+    height: 100%
+}
+
+.wx-audio-content .wx-audio-right {
+    flex: 1;
+}
+
+.wx-audio-content .wx-audio-right .wx-audio-title {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.wx-audio-content .wx-audio-right .wx-audio-disc {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: #8c8c8c;
+    display: none;
+}
+
+.wx-audio-content .wx-audio-right .wx-audio-progrees {
+    height: 3px;
+    position: relative
+}
+
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-progrees-detail {
+    height: 100%;
+    width: 100%;
+    background: #ebebeb;
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-progrees-detail .wx-voice-p {
+    width: 0%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background: #38bbd3;
+    z-index: 2
+}
+
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-progrees-detail .wx-buffer-p {
+    width: 0%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background: #d9d9d9;
+    z-index: 1
+}
+
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-progrees-detail .wx-loading {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden
+}
+
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-progrees-detail .wx-loading .wx-loading-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    -moz-animation: slidein 6s linear infinite normal;
+    -webkit-animation: slidein 6s linear infinite normal;
+    animation: slidein 6s linear infinite normal;
+    width: 200%;
+    max-width: none !important;
+    background-image: -moz-repeating-linear-gradient(-15deg, #d9d9d9, #d9d9d9 2px, #ebebeb 2px, #ebebeb 4px);
+    background-image: -webkit-repeating-linear-gradient(-15deg, #d9d9d9, #d9d9d9 2px, #ebebeb 2px, #ebebeb 4px);
+    background-image: repeating-linear-gradient(-15deg, #d9d9d9, #d9d9d9 2px, #ebebeb 2px, #ebebeb 4px)
+}
+
+@keyframes slidein {
+    0% {
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
+    100% {
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-audio-origin {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: #38bbd3;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border:0.115rem solid #000;
+}
+
+.wx-audio-content .wx-audio-right .wx-audio-progrees .wx-audio-origin:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -12px;
+    margin-left: -9px;
+}
+
+.wx-audio-content .wx-audio-right .wx-audio-time {
+    width: 100%;
+    padding-top: 0.3rem;
+    height: auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    overflow: hidden
+}
+
+.wx-audio-content .wx-audio-right .wx-audio-time span {
+    font-size: 0.6rem;
+    color: #000
+}

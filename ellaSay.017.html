@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/wx-audio.css">
+    <title>咿啦说</title>
+</head>
+<body>
+<div id="loader" class="m-wrap-loading">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+</div>
+<div class="g-wrap">
+    <img class="els-header" src="./img/logo@3x.png" alt="">
+    <div class="els-title-page" style="margin-top: 2.5rem;padding-top: 1rem">
+        <img style="margin: 0 auto" class="els-title-img" src="./img/APP-hb017.jpg" alt="">
+        <div id="elsAudio" style="margin: 0 auto 2rem"></div>
+    </div>
+    <div class="els-history-split">
+        <strong>/////////////</strong>
+        <span>粉丝反馈</span>
+        <strong>////////////</strong>
+    </div>
+    <div class="els-fan-say">
+        <p>
+            <span>@内蒙古+溪溪+5岁 :</span>
+            老师辛苦了
+        </p>
+        <p>
+            <span>@河北-硕-7岁 :</span>
+            感谢保老师分享，辛苦了。
+        </p>
+        <p>
+            <span>@河北-阳阳-3岁 :</span>
+            感谢保老师分享，感觉都没听够，说的好多小吃我都没吃过，最喜欢北京的稻香村糕点，真有立马去北京的冲动想法，哈哈，以前去北京就是看风景，以后去要多看看民俗。
+        </p>
+        <p>
+            <span>@广州-成成-3岁 :</span>
+            感谢保老师分享，感觉很有生活的味道，更想去北京旅行了
+        </p>
+        <p>
+            <span>@米-上海-3岁 :</span>
+            对，孩子在需要积累，家长也得积累。是不是可以这样说：无字绘本更能突破年龄限制。老师辛苦了！感谢老师！
+        </p>
+        <p>
+            <span>@东莞-小宝-1岁 :</span>
+            辛苦老师啦
+        </p>
+        <p>
+            <span>@新乡-小米-1岁 :</span>
+            老师辛苦了
+        </p>
+        <p>
+            <span>@涵广州-星-3.5岁 :</span>
+            感觉就是勾起儿时回忆中家乡生活的书，哈哈，感觉书里的有些押韵文字可以唱着给小孩听，增加趣味性。老北京的风情风貌今天晚上在老师的解说下领略了一遍，感觉恬静舒适
+        </p>
+        <p>
+            <span>@广州-成-5T :</span>
+            谢谢老师带我们走一回回忆中老北京，尝一遍老北京的地道美食，也让我想起爸爸带我去逛市集的情景，去北京不单只是走长城了，还要走一下其他地方
+        </p>
+        <p>
+            <span>@汕尾-萱萱-5岁 :</span>
+            辛苦了老师，谢谢分享。
+        </p>
+        <p>
+            <span>@米-上海-3岁 :</span>
+            这听着比吃一顿还过瘾，配合咿啦看书更好看。
+        </p>
+    </div>
+    <div class="els-title-btn">
+        分享给好友
+    </div>
+    <div class="els-download-app">
+        <img src="./img/gift@3x.png" alt="">
+        <div style="color: #666">
+            <p>添加“粉丝官”微信号</p>
+            <p>获取更多会员课程福利</p>
+        </div>
+        <input style="position:absolute;opacity: 0" id="foo" value="yilakanshu4">
+        <button class="btn els-copy-wx" data-clipboard-target="#foo">复制微信号并添加</button>
+    </div>
+</div>
+<div></div>
+<div class="el-toast" style="display: none;"></div>
+<div style="display: none;">
+    <script src="https://s22.cnzz.com/z_stat.php?id=1264998448&web_id=1264998448" language="JavaScript"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d82989125c2c40e2a60ea7123a21b2bf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/flexible.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/wx-audio.js"></script>
+<script>
+    new Wxaudio({
+        ele: '#elsAudio',
+        title: '纸上的文化旅行',
+        disc: '',
+        src: 'http://comment.ellabook.cn/ellatalkterm017.mp3',
+        width: ''
+    });
+</script>
+<script src="js/ellaSay.js?v=4"></script>
+</body>
+</html>
